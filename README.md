@@ -29,7 +29,7 @@
 
 ### Output
 First attendence
-![Elon Musk](/README_media/Screenshot_elon_musk.png "Elon Musk])
+![Elon Musk](/README_media/Screenshot_elon_musk.png "Elon Musk")
 
 Second Attendence
 ![David Gilmour](/README_media/Screenshot_david_gilmour.png "David Gilmour")
