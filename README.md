@@ -33,3 +33,6 @@ First attendence
 
 Second Attendence
 ![David Gilmour](/README_media/Screenshot_david_gilmour.png "David Gilmour")
+
+.csv file can be viewed in spreadsheets
+![Spreadsheet](/README_media/Screenshot_spreadsheet.png "Spreadsheet")
