@@ -28,11 +28,11 @@
 * Edit define_constants.py file **if required**
 
 ### Output
-First attendence
+###### First attendence
 ![Elon Musk](/README_media/Screenshot_elon_musk.png "Elon Musk")
 
-Second Attendence
+###### Second Attendence
 ![David Gilmour](/README_media/Screenshot_david_gilmour.png "David Gilmour")
 
-.csv file can be viewed in spreadsheets
+###### .csv file can be viewed in spreadsheets
 ![Spreadsheet](/README_media/Screenshot_spreadsheet.png "Spreadsheet")
