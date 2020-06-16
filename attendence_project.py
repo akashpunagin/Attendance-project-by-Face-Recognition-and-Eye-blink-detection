@@ -45,7 +45,7 @@ if n_people_in_pickle == len(people):
             index_match = np.argmin(score)
 
             # Check if min(score) is < 0.6
-            if np.min(score) < 0.6:
+            if np.min(score) < const.face_recognition_threshold:
                 frame_current_name = string.capwords(names[index_match].replace("_", " "))
             else:
                 frame_current_name = "Unknown"
@@ -55,7 +55,7 @@ if n_people_in_pickle == len(people):
             cv2.putText(frame,frame_current_name,(loc[3],loc[0]),cv2.FONT_HERSHEY_PLAIN,2,(0,0,255),2)
 
             # Record Attendence only if score is atmost 0.6
-            if np.min(score) < 0.6:
+            if np.min(score) < const.face_recognition_threshold:
                 utility.record_attendence(frame_current_name)
 
         cv2.imshow("Webcam (Press q to quit)", frame)
