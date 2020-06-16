@@ -41,7 +41,7 @@ if n_people_in_pickle == len(people):
 
         for index, (loc, encode) in enumerate(zip(frame_face_loc, frame_face_encode)):
             # Compare current encoding with face encodings
-            is_face_same = fr.compare_faces(face_encode, encode)
+            # is_face_same = fr.compare_faces(face_encode, encode)
             score = fr.face_distance(face_encode, encode)
             index_match = np.argmin(score)
 
