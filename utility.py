@@ -1,6 +1,10 @@
 import cv2
 import string
 from datetime import datetime
+from gtts import gTTS
+from pygame import mixer
+from multiprocessing import Pool
+import define_constants as const
 
 # Define helper functions
 def get_names(path):
@@ -30,4 +34,18 @@ def record_attendence(frame_current_name):
 
             # Write time and day details
             file.writelines(f"{frame_current_name},{current_weekday},{current_month},{current_day_of_month},{current_time}\n")
-            print(f"{frame_current_name}, your attendence is recorded")
+            text_display = f"{frame_current_name}, your attendence is recorded"
+            print(text_display)
+
+            if const.text_to_speech:
+                pool = Pool(processes=1) # Start a worker processes
+                result = pool.apply_async(text_to_speech, [text_display])
+
+def text_to_speech(text):
+    # Text to Voice
+    gtts_obj = gTTS(text=text, lang='en', slow=False)
+    gtts_obj.save('assets/text_to_speech/text_to_speech.mp3')
+
+    mixer.init()
+    mixer.music.load('assets/text_to_speech/text_to_speech.mp3')
+    mixer.music.play()

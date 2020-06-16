@@ -6,6 +6,8 @@ import pickle
 import utility
 import define_constants as const
 
+print('-----------------------------------------------------\n')
+
 # Load data from pickle file (n_people)
 with open('assets/pickles/n_people.pk', 'rb') as pickle_file:
     n_people_in_pickle = pickle.load(pickle_file)
@@ -24,7 +26,7 @@ if n_people_in_pickle == len(people):
     face_encode = np.load('assets/face_encodings/data.npy')
 
     # Initiate Webcam
-    print("Initiating camera...")
+    print("Initiating camera...\n")
 
     cap = cv2.VideoCapture(const.n_camera)
 

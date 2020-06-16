@@ -13,6 +13,11 @@
 * dlib
 * face_recognition
 
+### Packages for Text to Speech
+* gTTS
+* pygame
+
+
 ### Installing dlib on Ubuntu, [More](https://www.pyimagesearch.com/2018/01/22/install-dlib-easy-complete-guide/)
 * $ sudo apt-get update
 * $ sudo apt-get install build-essential cmake
@@ -28,11 +33,11 @@
 * Edit define_constants.py file **if required**
 
 ### Output
-###### First attendence
+##### First attendence
 ![Elon Musk](/README_media/Screenshot_elon_musk.png "Elon Musk")
 
-###### Second Attendence
+##### Second Attendence
 ![David Gilmour](/README_media/Screenshot_david_gilmour.png "David Gilmour")
 
-###### .csv file can be viewed in spreadsheets
+##### .csv file can be viewed in spreadsheets
 ![Spreadsheet](/README_media/Screenshot_spreadsheet.png "Spreadsheet")
