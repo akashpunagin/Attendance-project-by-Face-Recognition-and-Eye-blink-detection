@@ -2,7 +2,6 @@ import numpy as np
 import cv2
 import face_recognition as fr
 from glob import glob
-import string
 import pickle
 import utility
 import define_constants as const
@@ -46,7 +45,7 @@ if n_people_in_pickle == len(people):
 
             # Check if min(score) is < 0.6
             if np.min(score) < const.face_recognition_threshold:
-                frame_current_name = string.capwords(names[index_match].replace("_", " "))
+                frame_current_name = names[index_match]
             else:
                 frame_current_name = "Unknown"
 

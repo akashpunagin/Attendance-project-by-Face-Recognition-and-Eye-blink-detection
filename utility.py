@@ -1,9 +1,12 @@
 import cv2
+import string
 from datetime import datetime
 
-
 # Define helper functions
-get_names = lambda path : path.split('/')[-1].split('.')[0]
+def get_names(path):
+    name = path.split('/')[-1].split('.')[0]
+    name = string.capwords(name.replace("_", " "))
+    return name
 
 def get_images(path):
     img = cv2.imread(path)
