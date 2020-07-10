@@ -7,8 +7,9 @@
 * pickle
 * glob
 * string
+* scipy
 
-### Packages for Face Recognition
+### Packages for Face Recognition and Eye Blink Detection
 * cmake
 * dlib
 * face_recognition
@@ -41,3 +42,9 @@
 
 ##### .csv file can be viewed in spreadsheets
 ![Spreadsheet](/README_media/Screenshot_spreadsheet.png "Spreadsheet")
+
+# Eye Blink Update :
+### After this update, attendence is recorded only after the person blinks a certain amount of time.
+
+## Result
+![Result](/README_media/attendence_project_video.gif "Result")
