@@ -47,7 +47,4 @@
 ### After this update, attendence is recorded only after the person blinks a certain amount of time.
 
 ## Result
-![Result](/README_media/attendence_project_video.gif "Result")
-
-### YouTube
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uW48UC3WEos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![Result](/README_media/attendence_project_video.gif "Result")(https://www.youtube.com/watch?v=uW48UC3WEos)
