@@ -122,7 +122,7 @@ if n_people_in_pickle == len(people):
 
             # Draw Reactangle around faces with their names
             cv2.rectangle(frame,(loc[3],loc[0]),(loc[1],loc[2]),face_box_color,2) # top-right, bottom-left
-            cv2.putText(frame,frame_current_name,(loc[3],loc[0]),cv2.FONT_HERSHEY_PLAIN,2,const.text_in_frame_color,2)
+            cv2.putText(frame,frame_current_name,(loc[3],loc[0]-3),cv2.FONT_HERSHEY_PLAIN,2,const.text_in_frame_color,2)
 
         # Display frame
         cv2.imshow("Webcam (Press q to quit)", frame)
