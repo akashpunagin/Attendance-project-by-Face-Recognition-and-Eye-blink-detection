@@ -48,3 +48,6 @@
 
 ## Result
 ![Result](/README_media/attendence_project_video.gif "Result")
+
+### YouTube
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uW48UC3WEos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
