@@ -6,6 +6,8 @@ import face_recognition as fr
 import utility
 import define_constants as const
 
+print('-----------------------------------------------------\n')
+
 # Read all images
 people = glob(const.PEOPLE_DIR + '/*.*')
 print(f"Number of files in '{const.PEOPLE_DIR}' directory : {len(people)}")
@@ -19,7 +21,7 @@ is_face_found = True
 print('Encoding faces...')
 for index, img in enumerate(tqdm(images)):
     try:
-        face_encode.append(fr.face_encodings(img, num_jitters=10)[0])
+        face_encode.append(fr.face_encodings(img, num_jitters=const.n_face_encoding_jitters)[0])
     except Exception as e:
         print(f"Face not found in file : {people[index]}, replace it.")
         is_face_found = False
