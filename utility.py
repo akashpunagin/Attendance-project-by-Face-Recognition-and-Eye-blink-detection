@@ -6,10 +6,11 @@ from pygame import mixer
 from multiprocessing import Pool
 from scipy.spatial import distance as dist
 import define_constants as const
+import os
 
 # Define helper functions
 def get_names(path):
-    name = path.split('/')[-1].split('.')[0]
+    name = path.split(os.sep)[-1].split('.')[0]
     name = string.capwords(name.replace("_", " "))
     return name
 

@@ -28,7 +28,7 @@
 * $ sudo apt-get install python3 python3-dev python3-pip
 
 ## How to run
-* Store all immages **with one face** in 'people' directory. *Some images are avaibable*
+* Store all images **with one face** in 'people' directory. *Some images are avaibable*
 * Run enode_faces.py
 * Run attendence_project.py
 * Edit define_constants.py file **if required**
